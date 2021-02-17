@@ -21,7 +21,7 @@ function ip_info($ip = NULL, $purpose = "country_code", $deep_detect = TRUE) {
 		$cc=@$ipwhois_result->geoplugin_country_code{
             switch ($purpose) {
                 case $cc:
-				$output = @$ipwhois_result->geoplugin_countryName;
+				$content = @$ipwhois_result->geoplugin_countryName;
 				break;
             }
         }
